@@ -8,7 +8,9 @@
   "enabled": true,
   "priority": 50,
   "readme": "Generate and decode JWTs for testing authenticated APIs. Supports HS256, HS384, HS512, unsigned tokens (alg: none), custom payload/header editors, expiration/issued-at claim helpers, template saving, and one-click copy.",
-
+  "permissions": [
+    "filesystem"
+  ],
   "capabilities": {
     "ui": {
       "buttons": [
@@ -17,18 +19,16 @@
           "location": "sidebar-left",
           "icon": "Sparkles",
           "tooltip": "JWT Faker",
-          "description": "Opens JWT Faker dialog to generate and decode test JWTs"
+          "description": "Opens JWT Faker in a tab to generate and decode test JWTs"
         }
       ],
       "description": "Adds JWT Faker generator to UI toolbar and editor actions"
     }
   },
-
   "dependencies": {
     "core": "^1.0.0",
     "sdk": "^1.0.0"
   },
-
   "features": [
     "Generate JWTs using HMAC SHA algorithms: HS256, HS384, HS512",
     "Generate unsigned tokens (alg: none) for testing",
