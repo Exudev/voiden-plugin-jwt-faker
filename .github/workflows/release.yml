@@ -34,11 +34,14 @@ jobs:
       - name: Create zip release package
         run: node zip.mjs
 
+      - name: Prepare main.js bundle
+        run: cp dist/jwt-faker.js dist/main.js
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           files: |
             dist/manifest.json
             changelog.json
-            dist/jwt-faker.js
+            dist/main.js
             dist/jwt-faker.zip

@@ -1,5 +1,19 @@
 [
   {
+    "version": "v1.0.2",
+    "date": "16/10/2026",
+    "title": "Tab UI & Theme Compliance",
+    "description": "Reworked JWT Faker into a native editor panel tab and adopted Voiden theme tokens across all UI components.",
+    "changes": {
+      "Changed": [
+        "Reworked JwtFakerModal full-screen dialog into a native Voiden editor panel tab (JwtFakerTab) that sits alongside document editors",
+        "Replaced hardcoded palette colors with Voiden theme classes (bg-panel, bg-editor, bg-active, bg-code-bg, text-text, text-comment, text-accent, text-alt, text-status-error, text-status-success)",
+        "Added Command Palette registration for opening JWT Faker generator and decoder tab",
+        "Added bundle renaming (dist/main.js) in release workflow for installer pipeline compatibility"
+      ]
+    }
+  },
+  {
     "version": "v1.0.1",
     "date": "20/08/2026",
     "title": "Official Tooling & Status Bar Fix",
