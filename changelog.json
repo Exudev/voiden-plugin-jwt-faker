@@ -10,6 +10,9 @@
         "Replaced hardcoded palette colors with Voiden theme classes (bg-panel, bg-editor, bg-active, bg-code-bg, text-text, text-comment, text-accent, text-alt, text-status-error, text-status-success)",
         "Added Command Palette registration for opening JWT Faker generator and decoder tab",
         "Added bundle renaming (dist/main.js) in release workflow for installer pipeline compatibility"
+      ],
+      "Fixed": [
+        "Declared the \"commandPalette\" permission in manifest.json, so the plugin loads when installed from a release instead of failing with a missing-permission error"
       ]
     }
   },
