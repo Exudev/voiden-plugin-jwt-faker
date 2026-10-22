@@ -40,8 +40,11 @@ jobs:
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
+          # Fail the run instead of publishing a release with missing files.
+          fail_on_unmatched_files: true
           files: |
             dist/manifest.json
             changelog.json
+            dist/jwt-faker.js
             dist/main.js
             dist/jwt-faker.zip
