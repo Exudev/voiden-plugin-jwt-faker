@@ -323,7 +323,7 @@ export const JwtFakerTab = ({ showToast, isOpen, onClose }: JwtFakerTabProps = {
                   readOnly
                   rows={3}
                   value={generatedJwt}
-                  className="w-full font-mono text-xs bg-code-bg border border-border rounded p-2.5 text-accent select-all outline-none resize-none"
+                  className="w-full font-mono text-xs bg-panel border border-border rounded p-2.5 text-text select-all focus:border-accent outline-none transition-colors resize-none"
                 />
               </div>
 
@@ -364,14 +364,14 @@ export const JwtFakerTab = ({ showToast, isOpen, onClose }: JwtFakerTabProps = {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <span className="block text-xs font-semibold text-accent mb-1.5">Decoded Header</span>
-                    <pre className="font-mono text-xs bg-code-bg border border-border rounded p-2.5 overflow-x-auto text-accent">
+                    <pre className="font-mono text-xs bg-panel border border-border rounded p-2.5 overflow-x-auto text-text">
                       {JSON.stringify(decoded.header, null, 2)}
                     </pre>
                   </div>
 
                   <div>
                     <span className="block text-xs font-semibold text-alt mb-1.5">Decoded Payload</span>
-                    <pre className="font-mono text-xs bg-code-bg border border-border rounded p-2.5 overflow-x-auto text-alt">
+                    <pre className="font-mono text-xs bg-panel border border-border rounded p-2.5 overflow-x-auto text-text">
                       {JSON.stringify(decoded.payload, null, 2)}
                     </pre>
                   </div>
