@@ -323,7 +323,7 @@ export const JwtFakerTab = ({ showToast, isOpen, onClose }: JwtFakerTabProps = {
                   readOnly
                   rows={3}
                   value={generatedJwt}
-                  className="w-full font-mono text-xs bg-panel border border-border rounded p-2.5 text-text select-all outline-none resize-none"
+                  className="w-full font-mono text-xs bg-panel border border-border rounded p-2.5 text-text select-all focus:border-accent outline-none transition-colors resize-none"
                 />
               </div>
 
