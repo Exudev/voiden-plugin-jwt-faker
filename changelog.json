@@ -1,5 +1,19 @@
 [
   {
+    "version": "v1.0.3",
+    "date": "29/10/2026",
+    "title": "Dark Theme Contrast & Focus Improvements",
+    "description": "Improved readability of encoded and decoded JWT sections in dark themes and added focus styling.",
+    "changes": {
+      "Fixed": [
+        "Switched generated JWT textarea and decoded JSON previews from code-bg to bg-panel and text-text for proper contrast in dark themes (#3)"
+      ],
+      "Changed": [
+        "Added focus:border-accent and transition-colors to the generated JWT textarea"
+      ]
+    }
+  },
+  {
     "version": "v1.0.2",
     "date": "16/10/2026",
     "title": "Tab UI & Theme Compliance",
